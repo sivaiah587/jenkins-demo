@@ -5,12 +5,11 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/api")
 public class HelloController {
 	@RequestMapping(value="/",method=RequestMethod.GET)
 	public String Welcome()
 	{
-		return "Wecome Jenkins Demo!";
+		return "Welcome Jenkins Demo!";
 	}
 
 }
